@@ -13,6 +13,7 @@
 | [Коммуникации и командообразование](https://github.com/staffeev/itmo_ICT/tree/main/SoftSkills)                            |
 | [Линейная алгебра](https://github.com/staffeev/itmo_ICT/tree/main/LinAlg)                   |
 | [Математический анализ](https://github.com/staffeev/itmo_ICT/tree/main/MathAn)              |
+| [Облачные технологии и услуги](https://github.com/staffeev/itmo_clouds)                    |
 | [Программирование](https://github.com/staffeev/itmo_prog_hw)                                |
 | [Проектирование и реализация баз данных](https://github.com/staffeev/itmo_DB)               |
 | [Физика](https://github.com/staffeev/phys_labs)                                             |
