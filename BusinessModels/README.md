@@ -1,0 +1,7 @@
+Сервис аренды жилья "Ступень": [CJM](https://docs.google.com/spreadsheets/d/1UoYa713epIvfXrwYXD1rcwp4mldmVvV5Aa9eXIWsydU/edit?usp=sharing), [Kanban](https://app.striveapp.ru/join/19a9fdc2-83ff-4e98-89a4-587f496ec076), [PlanITPoker](https://app.planitpoker.com/room/cBbqMnkKgv8tyaDNgDJu8gvYikfTDpMf), [Матрица RACI](https://docs.google.com/spreadsheets/d/1p7ZbtzPbDj_N1WdMnRrMfoYERKdhNCeVkoySZvchnGQ/edit?usp=sharing), [Бизнес-модель Остервальда](https://miro.com/app/board/uXjVLK_EgRY=/?share_link_id=699373433427), [метрики TAM, SAM, SOM](https://app.striveapp.ru/join/19a9fdc2-83ff-4e98-89a4-587f496ec076)
+
+Магазин мерча Мегабаттла: [Value Proposition Canvas](https://miro.com/app/board/uXjVLERGHfs=/)
+
+Бизнес-модели для Робототехники, LifeScience и AgroTech: [Miro](https://miro.com/welcomeonboard/TkZSN2RHcEZBTkMxS1h0Y2dxQzFCV1paK0NXOEltUzZFaldTYW91VllpSjl5S2swTE9BUDVwNnpGYWZEamNwNW5PR1ZIdlM0TFRuUjZvdUNycXZKSnBKdXlwTlVUVFhweWFWRXNJUHlhQ3NobW1xbjZRY1JaUE0rM1pMVG1kWVMhZQ==?share_link_id=434505454059)
+
+Новогодние подарочки для ЦА: [Miro](https://miro.com/welcomeonboard/SlNsYTB3RHVXUWdiUksvY21DRWVhK3o2enAzUUljeC9DQ0dxbjZKTTlNdGNtUGtJQW10Q0YxcTVjYllhSHBKTjBjNnRQYlR0KzdMUzdVbTJINTcvS0pKdXlwTlVUVFhweWFWRXNJUHlhQ3NobW1xbjZRY1JaUE0rM1pMVG1kWVMhZQ==?share_link_id=246355229980)
