@@ -1,0 +1,1 @@
+[Плейлст с лекциями](https://www.youtube.com/playlist?list=PLHLzwspaVejl3bCDHZReVHL0Snij6jPK6)
