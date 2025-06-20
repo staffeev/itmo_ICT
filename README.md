@@ -22,6 +22,6 @@
 |3| [Облачные технологии и услуги](https://github.com/Tronnert/dev_ops_labs)|
 |3| [Бизнес-модели основных секторов инновационной экономики](https://github.com/staffeev/itmo_ICT/tree/main/BusinessModels)|
 |3| [Дифференциальные уравнения](https://github.com/staffeev/itmo_ICT/tree/main/DifferentialEquations)|
-|3| [Объектно-ориентированное программирование](https://github.com/staffeev/itmo_OOP)|
+|3-4| [Объектно-ориентированное программирование](https://github.com/staffeev/itmo_OOP)|
 |4| [Учебная практика](https://github.com/staffeev/itmo_ICT/tree/main/EduPractic)|
 |4| [Компьютерные сети](https://github.com/staffeev/itmo_ICT/tree/main/ComputerNetworks)|
