@@ -24,3 +24,4 @@
 |3| [Дифференциальные уравнения](https://github.com/staffeev/itmo_ICT/tree/main/DifferentialEquations)|
 |3| [Объектно-ориентированное программирование](https://github.com/staffeev/itmo_OOP)|
 |4| [Учебная практика](https://github.com/staffeev/itmo_ICT/tree/main/EduPractic)|
+|4| [Компьютерные сети](https://github.com/staffeev/itmo_ICT/tree/main/ComputerNetworks)|
