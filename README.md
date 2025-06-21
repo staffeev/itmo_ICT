@@ -26,3 +26,4 @@
 |4| [Компьютерные сети](https://github.com/staffeev/itmo_ICT/tree/main/ComputerNetworks)|
 |4| [Стартапы с нуля](https://github.com/staffeev/itmo_ICT/tree/main/ComputerNetworks)|
 |4| [Учебная практика](https://github.com/staffeev/itmo_ICT/tree/main/EduPractic)|
+|4| [Экология](https://github.com/staffeev/itmo_ICT/tree/main/Eco)|
