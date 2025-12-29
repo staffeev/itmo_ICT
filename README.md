@@ -30,3 +30,9 @@
 |4| [Стартапы с нуля](https://github.com/staffeev/itmo_ICT/tree/main/ComputerNetworks)|
 |4| [Учебная практика](https://github.com/staffeev/itmo_ICT/tree/main/EduPractic)|
 |4| [Экология](https://github.com/staffeev/itmo_ICT/tree/main/Eco)|
+|5| [Web-программирование](https://github.com/staffeev/itmo-web)|
+|5| [Введение в маршрутизацию на предприятии](https://github.com/staffeev/2025_2026-introduction_in_routing-k3321-stafeev_i_a)|
+|5| [Проектирование инфокоммуникационных систем](https://github.com/staffeev/itmo_ICT/tree/main/InfComSystemDesign)|
+|5| [Теория электрической связи](https://github.com/staffeev/itmo_ICT/tree/main/ElectricalComTheory)|
+|5| [Тестирование программного обеспечения](https://github.com/staffeev/itmo_ICT/tree/main/SoftwareTesting)|
+|5| [Язык Python для анализа данных](https://github.com/staffeev/itmo_ICT/tree/main/PythonDS)|

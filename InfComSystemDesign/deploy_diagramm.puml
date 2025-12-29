@@ -1,0 +1,73 @@
+@startuml
+title Диаграмма развёртывания ИС «Ты нужен людям!»
+
+skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam nodeStyle rectangle
+
+' ================== Клиент ==================
+node "Клиентское устройство" <<device>> {
+  artifact "Web Browser" {
+    artifact "Client Web App"
+  }
+}
+
+' ================== Сервер приложений ==================
+node "Сервер приложений" <<device>> {
+
+  package "backend_application.jar" {
+    component "Auth Service"
+    component "Events Service"
+    component "Characteristics Service"
+    component "Analytics Service"
+  }
+
+  artifact "notification_module.jar" {
+    component "Notification Service"
+  }
+
+  artifact "integration_module.jar" {
+    component "Integration Service"
+  }
+
+  artifact "utils.jar"
+
+  artifact "app_config.xml" <<deployment spec>>
+  artifact "security_config.xml" <<deployment spec>>
+}
+
+' ================== Сервер БД ==================
+node "Сервер базы данных" <<device>> {
+  database "volunteer_db" {
+    artifact "volunteer_system.sql"
+  }
+  artifact "db_config.ini" <<deployment spec>>
+}
+
+' ================== Сервер уведомлений ==================
+node "Сервис уведомлений" <<device>> {
+  artifact "Mail / Push API"
+}
+
+' ================== Внешние системы ==================
+node "ИСУ ИТМО" <<device>> {
+  artifact "ISU API"
+}
+
+node "Добро.рф" <<device>> {
+  artifact "Dobro API"
+}
+
+' ================== Соединения ==================
+"Client Web App" --> "backend_application.jar" : HTTPS / REST
+
+"Auth Service" --> "volunteer_db" : JDBC / SQL
+"Events Service" --> "volunteer_db" : JDBC / SQL
+"Characteristics Service" --> "volunteer_db" : JDBC / SQL
+"Analytics Service" --> "volunteer_db" : JDBC / SQL
+
+"Notification Service" --> "Mail / Push API" : SMTP / HTTPS
+
+"Integration Service" --> "ISU API" : HTTPS
+"Integration Service" --> "Dobro API" : HTTPS
+@enduml

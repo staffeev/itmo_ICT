@@ -1,0 +1,7 @@
+[lab1](https://colab.research.google.com/drive/1rmv8g65NUeE_fozLbvX-iMUn8g3eaWKk?usp=sharing)
+[lab2](https://colab.research.google.com/drive/17xzivPRxG3rBJBPWU17TBHI4AUT87x4s?usp=sharing)
+[lab3](https://colab.research.google.com/drive/1ywi15S9OXIp0VAkWx8FJsyvUPj9eUGdZ?usp=sharing)
+[lab4](https://colab.research.google.com/drive/1g0Mm46pZ6PFaaq4FnSSHMOauousq2EIC?usp=sharing)
+[lab5](https://colab.research.google.com/drive/1_ijBQTc9D33vhzD2jsNfdIbbrgokuOe2?usp=sharing)
+[lab6](https://colab.research.google.com/drive/1EC3WeCMsxCMjnEdt0d_Cz4XdCVBwBS6_?usp=sharing)
+[lab7](https://colab.research.google.com/drive/1W_SYMb09CHret1oh5yj6CW5xz_xAmgeE?usp=sharing)

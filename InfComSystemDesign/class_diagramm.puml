@@ -1,0 +1,152 @@
+@startuml
+' ===== Стили =====
+skinparam class {
+    BackgroundColor<<abstract>> LightGray
+    BackgroundColor<<interface>> LightBlue
+    BorderColor Black
+    ArrowColor Black
+}
+
+' ===== Пользователи =====
+abstract class User {
+  - ISU
+  - firstName
+  - secondName
+  - lastName
+  - contact
+  + login()
+  + logout()
+  + viewDashboard()
+}
+
+class Volunteer {
+  - achievements
+  + signUpForEvent()
+  + cancelAppointmentForEvent()
+  + viewVolunteerStatistics()
+  + getAchievements()
+}
+
+class Coordinator {
+  + assignVolunteers()
+  + evaluateVolunteers()
+  + sendNotifications()
+}
+
+class Crew {
+  + approveCharacteristics()
+  + manageEventRequests()
+  + generateReport()
+}
+
+User <|-- Volunteer
+User <|-- Coordinator
+User <|-- Crew
+
+' ===== Factory Method =====
+abstract class UserFactory {
+  + createUser()
+}
+
+class VolunteerFactory
+class CoordinatorFactory
+class CrewFactory
+
+UserFactory <|-- VolunteerFactory
+UserFactory <|-- CoordinatorFactory
+UserFactory <|-- CrewFactory
+
+VolunteerFactory ..> Volunteer : creates
+CoordinatorFactory ..> Coordinator : creates
+CrewFactory ..> Crew : creates
+
+' ===== События =====
+class Event {
+  - id
+  - name
+  - dateStart
+  - dateEnd
+  + changeStatus()
+}
+
+Volunteer "0..*" --> "0..*" Event : participates
+Coordinator "1" --> "0..*" Event : coordinates
+Crew "1" --> "0..*" Event : manages
+
+' ===== Observer =====
+interface Subject {
+  + attach()
+  + detach()
+  + notifyObservers()
+}
+
+interface Observer {
+  + update()
+}
+
+Event ..|> Subject
+NotificationService ..|> Observer
+
+class NotificationService {
+  + update()
+  + sendNotification()
+}
+
+Subject --> Observer : notifies
+
+' ===== Характеристики =====
+class Characteristic {
+  - hoursCount
+  - isCoordinator
+  - feedback
+  - gratitudeFile
+  - type
+  - calculationStrategy
+  + calculateResult()
+}
+
+class CharacteristicType {
+  - name
+  - coefficient
+}
+
+Event "1" --> "0..*" Characteristic
+Characteristic --> CharacteristicType
+
+' ===== Strategy =====
+interface CharacteristicCalculationStrategy {
+  + calculate()
+}
+
+class DefaultCalculationStrategy
+class CoordinatorBonusStrategy
+class GratitudeAwareStrategy
+
+Characteristic --> CharacteristicCalculationStrategy : uses
+CharacteristicCalculationStrategy <|.. DefaultCalculationStrategy
+CharacteristicCalculationStrategy <|.. CoordinatorBonusStrategy
+CharacteristicCalculationStrategy <|.. GratitudeAwareStrategy
+
+' ===== Facade =====
+class IntegrationFacade {
+  + importEvent()
+  + exportResults()
+  + syncUsers()
+}
+
+class ISUService
+class DobroService
+
+IntegrationFacade --> ISUService
+IntegrationFacade --> DobroService
+
+Crew --> IntegrationFacade : uses
+Coordinator --> IntegrationFacade : uses
+
+' ===== Отчеты =====
+class ReportGenerator {
+  + generateReport()
+}
+
+Crew --> ReportGenerator
+@enduml
