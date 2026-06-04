@@ -1,0 +1,37 @@
+conf t
+hostname ASA1
+no dhcpd address 192.168.1.5-192.168.1.36 inside
+no dhcpd enable inside
+interface vlan 1
+ ip address 10.1.0.1 255.255.255.252
+exit
+interface vlan 2
+ ip address 210.210.1.2 255.255.255.252
+exit
+route outside 0.0.0.0 0.0.0.0 210.210.1.1 1
+route inside 10.1.0.0 255.255.0.0 10.1.0.2 1
+crypto ikev1 enable outside
+crypto ikev1 policy 1
+ authentication pre-share
+ encryption 3des
+ hash md5
+ group 2
+ lifetime 43200
+exit
+tunnel-group 210.210.2.2 type ipsec-l2l
+tunnel-group 210.210.2.2 ipsec-attributes
+ ikev1 pre-shared-key cisco
+exit
+crypto ipsec ikev1 transform-set TS esp-3des esp-md5-hmac
+access-list FOR-VPN extended permit ip 10.1.0.0 255.255.0.0 10.2.0.0 255.255.0.0
+crypto map To-Site2 1 match address FOR-VPN
+crypto map To-Site2 1 set peer 210.210.2.2
+crypto map To-Site2 1 set security-association lifetime seconds 86400
+crypto map To-Site2 1 set ikev1 transform-set TS
+crypto map To-Site2 interface outside
+access-list FROM-VPN extended permit icmp 10.2.0.0 255.255.0.0 10.1.0.0 255.255.0.0
+access-list FROM-VPN extended permit tcp 10.2.0.0 255.255.0.0 10.1.0.0 255.255.0.0
+access-list FROM-VPN extended permit udp 10.2.0.0 255.255.0.0 10.1.0.0 255.255.0.0
+access-group FROM-VPN out interface inside
+end
+wr mem
